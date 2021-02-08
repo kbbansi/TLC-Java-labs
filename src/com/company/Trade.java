@@ -1,6 +1,6 @@
 package com.company;
 
-public class Trade {
+public abstract class Trade {
     private String ID;
     private String Symbol;
     private int Quantity;
@@ -59,6 +59,9 @@ public class Trade {
         }
         return price;
     }
+
+    // abstract method
+    public abstract double calcDividend();
 
     //Override toString method
     @Override
