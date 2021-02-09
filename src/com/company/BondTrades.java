@@ -7,6 +7,7 @@ public class BondTrades extends Trade {
 
     @Override
     public double calcDividend() {
-        return 0.00;
+        // calculation for bond dividends
+        return (getPrice()/(getPrice() * getQuantity())) * 100;
     }
 }
